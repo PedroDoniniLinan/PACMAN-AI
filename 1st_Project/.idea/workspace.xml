@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6a3d965-9fa4-4898-94c9-506b1b840708" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/searchAgents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="581" lean-forward="true" selection-start-line="581" selection-end-line="581" />
+              <folding>
+                <element signature="e#1354#1381#0" expanded="true" />
+                <element signature="e#1500#1784#0" />
+                <element signature="e#1583#1784#0" expanded="true" />
+                <element signature="e#2042#5377#0" />
+                <element signature="e#2572#3941#0" expanded="true" />
+                <element signature="e#3994#4867#0" expanded="true" />
+                <element signature="e#4909#5377#0" expanded="true" />
+                <element signature="e#5914#6650#0" expanded="true" />
+                <element signature="e#6689#6711#0" expanded="true" />
+                <element signature="e#6755#7177#0" expanded="true" />
+                <element signature="e#7223#8342#0" expanded="true" />
+                <element signature="e#8984#9405#0" />
+                <element signature="e#9219#9405#0" expanded="true" />
+                <element signature="e#9452#9849#0" />
+                <element signature="e#9908#10067#0" expanded="true" />
+                <element signature="e#10126#10300#0" expanded="true" />
+                <element signature="e#10512#14158#0" />
+                <element signature="e#14154#14374#0" />
+                <element signature="e#14406#16467#0" />
+                <element signature="e#16515#16735#0" />
+                <element signature="e#20433#20844#0" expanded="true" />
+                <element signature="e#20026#20477#0" expanded="true" />
+                <element signature="e#21942#22163#0" expanded="true" />
+                <element signature="e#20794#21473#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="141" column="93" selection-start-line="141" selection-start-column="93" selection-end-line="141" selection-end-column="93" />
+              <folding>
+                <element signature="e#774#785#0" expanded="true" />
+                <element signature="e#2111#2491#0" />
+                <element signature="e#2365#2491#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+              <folding>
+                <element signature="e#1205#1728#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pacman.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="804">
+              <caret line="683" column="8" selection-start-line="683" selection-start-column="8" selection-end-line="683" selection-end-column="8" />
+              <folding>
+                <element signature="e#9343#11141#0" />
+                <element signature="e#11166#13271#0" />
+                <element signature="e#13295#16576#0" />
+                <element signature="e#22741#23708#0" expanded="true" />
+                <element signature="e#25975#26335#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="208" selection-start-line="208" selection-end-line="208" />
+              <folding>
+                <element signature="e#10145#10562#0" />
+                <element signature="e#10581#11095#0" />
+                <element signature="e#12491#13178#0" />
+                <element signature="e#12815#13006#0" expanded="true" />
+                <element signature="e#13042#13178#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>agentStates</find>
+      <find>current</find>
+      <find>registerInitialState</find>
+      <find>cornerState</find>
+      <find>visualize</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>goal</replace>
+      <replace>initialCornerState</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/util.py" />
+        <option value="$PROJECT_DIR$/pacman.py" />
+        <option value="$PROJECT_DIR$/search.py" />
+        <option value="$PROJECT_DIR$/searchAgents.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="944" />
+    <option name="width" value="985" />
+    <option name="height" value="556" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PacmanIA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PacmanIA" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/python.exe" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6a3d965-9fa4-4898-94c9-506b1b840708" name="Default Changelist" comment="" />
+      <created>1547560663516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547560663516</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1340" height="760" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49923313" visible="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007669" side_tool="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290938" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49923313" visible="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007669" side_tool="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290938" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/DD/Supelec/IA/search/grading.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/graphicsDisplay.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/graphicsUtils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/keyboardAgents.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/layout.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/pacman.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/pacmanAgents.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/projectParams.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/search.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/searchAgents.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/searchTestClasses.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/submission_autograder.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/testClasses.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/textDisplay.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/autograder.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/eightpuzzle.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/ghostAgents.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/testParser.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/DD/Supelec/IA/search/game.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <element signature="e#1205#1728#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+          <folding>
+            <element signature="e#10145#10562#0" />
+            <element signature="e#10581#11095#0" />
+            <element signature="e#12491#13178#0" />
+            <element signature="e#12815#13006#0" expanded="true" />
+            <element signature="e#13042#13178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pacman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="683" column="8" selection-start-line="683" selection-start-column="8" selection-end-line="683" selection-end-column="8" />
+          <folding>
+            <element signature="e#9343#11141#0" />
+            <element signature="e#11166#13271#0" />
+            <element signature="e#13295#16576#0" />
+            <element signature="e#22741#23708#0" expanded="true" />
+            <element signature="e#25975#26335#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="141" column="93" selection-start-line="141" selection-start-column="93" selection-end-line="141" selection-end-column="93" />
+          <folding>
+            <element signature="e#774#785#0" expanded="true" />
+            <element signature="e#2111#2491#0" />
+            <element signature="e#2365#2491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="581" lean-forward="true" selection-start-line="581" selection-end-line="581" />
+          <folding>
+            <element signature="e#1354#1381#0" expanded="true" />
+            <element signature="e#1500#1784#0" />
+            <element signature="e#1583#1784#0" expanded="true" />
+            <element signature="e#2042#5377#0" />
+            <element signature="e#2572#3941#0" expanded="true" />
+            <element signature="e#3994#4867#0" expanded="true" />
+            <element signature="e#4909#5377#0" expanded="true" />
+            <element signature="e#5914#6650#0" expanded="true" />
+            <element signature="e#6689#6711#0" expanded="true" />
+            <element signature="e#6755#7177#0" expanded="true" />
+            <element signature="e#7223#8342#0" expanded="true" />
+            <element signature="e#8984#9405#0" />
+            <element signature="e#9219#9405#0" expanded="true" />
+            <element signature="e#9452#9849#0" />
+            <element signature="e#9908#10067#0" expanded="true" />
+            <element signature="e#10126#10300#0" expanded="true" />
+            <element signature="e#10512#14158#0" />
+            <element signature="e#14154#14374#0" />
+            <element signature="e#14406#16467#0" />
+            <element signature="e#16515#16735#0" />
+            <element signature="e#20433#20844#0" expanded="true" />
+            <element signature="e#20026#20477#0" expanded="true" />
+            <element signature="e#21942#22163#0" expanded="true" />
+            <element signature="e#20794#21473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
