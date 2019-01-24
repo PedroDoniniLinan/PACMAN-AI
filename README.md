@@ -14,7 +14,7 @@ python pacman.py --layout tinyMaze --pacman GoWestAgent
 
 -Finding minimum path
 
-  -DFS
+  *DFS
   
   python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
   
@@ -24,7 +24,7 @@ python pacman.py --layout tinyMaze --pacman GoWestAgent
   
   python pacman.py -l bigMaze -z .5 -p SearchAgent
   
-  -BFS
+  *BFS
   
   python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
   
@@ -32,7 +32,7 @@ python pacman.py --layout tinyMaze --pacman GoWestAgent
   
   python eightpuzzle.py
   
-  -UCS
+  *UCS
   
   python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
   
@@ -40,7 +40,7 @@ python pacman.py --layout tinyMaze --pacman GoWestAgent
   
   python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
   
-  -A* search
+  *A* search
   
   python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
  
