@@ -39,6 +39,7 @@ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
 python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
 
 -Eating all dots
+
   - Optimal solution
   python pacman.py -l testSearch -p AStarFoodSearchAgent
   python pacman.py -l trickySearch -p AStarFoodSearchAgent
