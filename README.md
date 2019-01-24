@@ -13,6 +13,7 @@ python pacman.py --layout testMaze --pacman GoWestAgent
 python pacman.py --layout tinyMaze --pacman GoWestAgent
 
 -Finding minimum path
+
   -DFS
   
   python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
