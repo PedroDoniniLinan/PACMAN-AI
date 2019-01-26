@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c33c408-8521-4cad-b834-9e7e58ca7c44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2nd_Project/multiAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/2nd_Project/multiAgents.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,15 +16,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2nd_Project/multiAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+            <state relative-caret-position="246">
+              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
               <folding>
-                <element signature="e#660#694#0" expanded="true" />
-                <element signature="e#1144#2008#0" expanded="true" />
-                <element signature="e#3602#4436#0" />
-                <element signature="e#4485#5457#0" />
-                <element signature="e#5508#5788#0" />
-                <element signature="e#5840#6208#0" />
+                <element signature="e#814#4098#0" />
+                <element signature="e#1160#1981#0" expanded="true" />
+                <element signature="e#4878#5712#0" />
+                <element signature="e#5857#7105#0" expanded="true" />
+                <element signature="e#6786#7066#0" />
+                <element signature="e#6905#7066#0" expanded="true" />
+                <element signature="e#7119#7487#0" />
+                <element signature="e#7217#7487#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2nd_Project/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="233" column="3" lean-forward="true" selection-start-line="233" selection-start-column="3" selection-end-line="233" selection-end-column="3" />
+            <state relative-caret-position="-6">
+              <caret line="638" selection-start-line="638" selection-end-line="638" />
             </state>
           </provider>
         </entry>
@@ -66,6 +69,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -136,13 +140,9 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1340" height="760" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3290938" />
-      <window_info anchor="bottom" id="Python Console" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.95230526" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3290938" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -150,40 +150,69 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.25" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.95230526" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3290938" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3290938" />
-      <window_info anchor="bottom" id="Python Console" order="3" weight="0.3290938" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2nd_Project/multiAgents.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/2nd_Project/pacman.py">
@@ -203,22 +232,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2nd_Project/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="233" column="3" lean-forward="true" selection-start-line="233" selection-start-column="3" selection-end-line="233" selection-end-column="3" />
+        <state relative-caret-position="-6">
+          <caret line="638" selection-start-line="638" selection-end-line="638" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2nd_Project/multiAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        <state relative-caret-position="246">
+          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
           <folding>
-            <element signature="e#660#694#0" expanded="true" />
-            <element signature="e#1144#2008#0" expanded="true" />
-            <element signature="e#3602#4436#0" />
-            <element signature="e#4485#5457#0" />
-            <element signature="e#5508#5788#0" />
-            <element signature="e#5840#6208#0" />
+            <element signature="e#814#4098#0" />
+            <element signature="e#1160#1981#0" expanded="true" />
+            <element signature="e#4878#5712#0" />
+            <element signature="e#5857#7105#0" expanded="true" />
+            <element signature="e#6786#7066#0" />
+            <element signature="e#6905#7066#0" expanded="true" />
+            <element signature="e#7119#7487#0" />
+            <element signature="e#7217#7487#0" expanded="true" />
           </folding>
         </state>
       </provider>
