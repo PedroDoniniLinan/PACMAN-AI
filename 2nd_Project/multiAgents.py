@@ -13,10 +13,11 @@
 
 
 from util import manhattanDistance
-from game import Directions
-import random, util
-
+# from game import Directions
 from game import Agent
+import random
+import util as util
+
 
 class ReflexAgent(Agent):
     """
@@ -51,7 +52,8 @@ class ReflexAgent(Agent):
 
         return legalMoves[chosenIndex]
 
-    def evaluationFunction(self, currentGameState, action):
+    @staticmethod
+    def evaluationFunction(currentGameState, action):
         """
         Design a better evaluation function here.
 
@@ -74,7 +76,51 @@ class ReflexAgent(Agent):
         newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
 
         "*** YOUR CODE HERE ***"
-        return successorGameState.getScore()
+
+        foodPos = getPositions(newFood)
+        ghostPos = successorGameState.getGhostPositions()
+        scaredGhostPos = [g for i, g in enumerate(ghostPos)
+                          if (newScaredTimes[i] > 0 and manhattanDistance(newPos, g) < newScaredTimes[i])]
+        notScaredGhostPos = [g for g in ghostPos if g not in scaredGhostPos]
+        score = successorGameState.getScore()
+
+        if len(foodPos) == 0:
+            return 9999
+
+        ns = minManhattanDistance(newPos, notScaredGhostPos)
+        s = minManhattanDistance(newPos, scaredGhostPos)
+        f = minManhattanDistance(newPos, foodPos)
+
+        if currentGameState.getNumFood() > successorGameState.getNumFood():
+            score += 10
+        if ns == 1:
+            score -= 10
+        else:
+            score += ns / 10
+        score -= s
+        score -= f
+
+        if newPos == currentGameState.getPacmanPosition():
+            score -= 10
+
+        return score
+
+def getPositions(board):
+    pos = []
+    for i in range(len([row for row in board])):
+        for j in range(len(board[0])):
+            if board[i][j]:
+                pos.append((i, j))
+    return pos
+
+def minManhattanDistance(origin, targets):
+    if len(targets) == 0:
+        return 0
+    d = 9999
+    for t in targets:
+        d = min(d, manhattanDistance(origin, t))
+    return d
+
 
 def scoreEvaluationFunction(currentGameState):
     """
@@ -85,6 +131,7 @@ def scoreEvaluationFunction(currentGameState):
       (not reflex agents).
     """
     return currentGameState.getScore()
+
 
 class MultiAgentSearchAgent(Agent):
     """
@@ -105,6 +152,7 @@ class MultiAgentSearchAgent(Agent):
         self.index = 0 # Pacman is always agent index 0
         self.evaluationFunction = util.lookup(evalFn, globals())
         self.depth = int(depth)
+
 
 class MinimaxAgent(MultiAgentSearchAgent):
     """
@@ -137,6 +185,7 @@ class MinimaxAgent(MultiAgentSearchAgent):
         "*** YOUR CODE HERE ***"
         util.raiseNotDefined()
 
+
 class AlphaBetaAgent(MultiAgentSearchAgent):
     """
       Your minimax agent with alpha-beta pruning (question 3)
@@ -148,6 +197,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
         """
         "*** YOUR CODE HERE ***"
         util.raiseNotDefined()
+
 
 class ExpectimaxAgent(MultiAgentSearchAgent):
     """
@@ -163,6 +213,7 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
         """
         "*** YOUR CODE HERE ***"
         util.raiseNotDefined()
+
 
 def betterEvaluationFunction(currentGameState):
     """
