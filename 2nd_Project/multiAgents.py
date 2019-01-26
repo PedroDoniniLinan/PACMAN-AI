@@ -195,17 +195,11 @@ class MinimaxAgent(MultiAgentSearchAgent):
                 bestAction = act
         return bestAction
 
-
-
     def minMax(self, state, depth, agentIndex):
 
         if agentIndex == state.getNumAgents():
             depth -= 1
             agentIndex = 0
-
-        tab = ''
-        for i in range(self.depth - depth):
-            tab += '\t'
 
         if state.isWin():
             return self.evaluationFunction(state)
@@ -221,12 +215,6 @@ class MinimaxAgent(MultiAgentSearchAgent):
         for act in actions:
             successor = state.generateSuccessor(agentIndex, act)
             actScore = self.minMax(successor, depth, agentIndex + 1)
-            # print()
-            # print(tab, 'agent ', agentIndex)
-            # print(tab, 'depth ', depth)
-            # print(tab, act)
-            # print(tab, score)
-            # print(tab, actScore)
             if score is None:
                 score = actScore
             elif agentIndex == 0:
@@ -234,7 +222,6 @@ class MinimaxAgent(MultiAgentSearchAgent):
             else:
                 score = min(score, actScore)
         return score
-
 
 
 class AlphaBetaAgent(MultiAgentSearchAgent):
@@ -247,8 +234,74 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
           Returns the minimax action using self.depth and self.evaluationFunction
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        actions = gameState.getLegalActions(0)
+        score = None
+        bestAction = None
+        alpha = None
+        for act in actions:
+            successor = gameState.generateSuccessor(0, act)
+            actScore = self.alphaBeta(successor, self.depth, 1, alpha, None)
+            if score is None:
+                score = actScore
+                alpha = score
+                bestAction = act
+            elif score < actScore:
+                score = actScore
+                alpha = score
+                bestAction = act
+        return bestAction
 
+    def alphaBeta(self, state, depth, agentIndex, alpha, beta):
+
+        if agentIndex == state.getNumAgents():
+            depth -= 1
+            agentIndex = 0
+
+        if state.isWin():
+            return self.evaluationFunction(state)
+        elif state.isLose():
+            return self.evaluationFunction(state)
+
+        if depth == 0:
+            return self.evaluationFunction(state)
+
+        score = None
+        actions = state.getLegalActions(agentIndex)
+
+        for act in actions:
+            successor = state.generateSuccessor(agentIndex, act)
+            actScore = self.alphaBeta(successor, depth, agentIndex + 1, alpha, beta)
+            if score is None:
+                score = actScore
+                if agentIndex == 0:
+                    if beta is not None:
+                        if actScore > beta:
+                            return actScore
+                    if alpha is not None:
+                        alpha = max(actScore, alpha)
+                    else:
+                        alpha = actScore
+                else:
+                    if alpha is not None:
+                        if actScore < alpha:
+                            return actScore
+                    if beta is not None:
+                        beta = min(beta, actScore)
+                    else:
+                        beta = actScore
+            elif agentIndex == 0:
+                if beta is not None:
+                    if actScore > beta:
+                        return actScore
+                score = max(score, actScore)
+                alpha = max(score, alpha)
+            else:
+                if alpha is not None:
+                    if actScore < alpha:
+                        return actScore
+                score = min(score, actScore)
+                beta = min(score, beta)
+        return score
 
 class ExpectimaxAgent(MultiAgentSearchAgent):
     """

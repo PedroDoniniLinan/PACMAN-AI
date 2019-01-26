@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c33c408-8521-4cad-b834-9e7e58ca7c44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2nd_Project/multiAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/2nd_Project/multiAgents.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,43 +15,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2nd_Project/multiAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+            <state relative-caret-position="224">
+              <caret line="288" column="50" selection-start-line="288" selection-start-column="50" selection-end-line="288" selection-end-column="50" />
               <folding>
                 <element signature="e#814#4098#0" />
                 <element signature="e#1160#1981#0" expanded="true" />
                 <element signature="e#4878#5712#0" />
-                <element signature="e#5857#7105#0" expanded="true" />
-                <element signature="e#6786#7066#0" />
+                <element signature="e#5762#8272#0" />
                 <element signature="e#6905#7066#0" expanded="true" />
                 <element signature="e#7119#7487#0" />
                 <element signature="e#7217#7487#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2nd_Project/util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="638" selection-start-line="638" selection-end-line="638" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2nd_Project/pacman.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="166" selection-start-line="166" selection-end-line="166" />
-              <folding>
-                <element signature="e#9343#11141#0" />
-                <element signature="e#11166#13271#0" />
-                <element signature="e#13295#16576#0" />
-                <element signature="e#15010#15735#0" expanded="true" />
-                <element signature="e#15838#16224#0" expanded="true" />
-                <element signature="e#25975#26335#0" />
               </folding>
             </state>
           </provider>
@@ -124,6 +96,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="multiAgents" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PacmanIA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2nd_Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2nd_Project/multiAgents.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.multiAgents" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,7 +145,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -164,7 +164,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -232,21 +232,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2nd_Project/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
+        <state relative-caret-position="181">
           <caret line="638" selection-start-line="638" selection-end-line="638" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2nd_Project/multiAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+        <state relative-caret-position="224">
+          <caret line="288" column="50" selection-start-line="288" selection-start-column="50" selection-end-line="288" selection-end-column="50" />
           <folding>
             <element signature="e#814#4098#0" />
             <element signature="e#1160#1981#0" expanded="true" />
             <element signature="e#4878#5712#0" />
-            <element signature="e#5857#7105#0" expanded="true" />
-            <element signature="e#6786#7066#0" />
+            <element signature="e#5762#8272#0" />
             <element signature="e#6905#7066#0" expanded="true" />
             <element signature="e#7119#7487#0" />
             <element signature="e#7217#7487#0" expanded="true" />
