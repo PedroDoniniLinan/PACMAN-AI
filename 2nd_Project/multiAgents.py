@@ -17,6 +17,7 @@ from util import manhattanDistance
 from game import Agent
 import random
 import util as util
+import search as s
 
 
 class ReflexAgent(Agent):
@@ -303,6 +304,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
                 beta = min(score, beta)
         return score
 
+
 class ExpectimaxAgent(MultiAgentSearchAgent):
     """
       Your expectimax agent (question 4)
@@ -316,7 +318,50 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
           legal moves.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+
+        actions = gameState.getLegalActions(0)
+        score = None
+        bestAction = None
+        for act in actions:
+            successor = gameState.generateSuccessor(0, act)
+            actScore = self.expectiMax(successor, self.depth, 1)
+            if score is None:
+                score = actScore
+                bestAction = act
+            elif score < actScore:
+                score = actScore
+                bestAction = act
+        return bestAction
+
+    def expectiMax(self, state, depth, agentIndex):
+
+        if agentIndex == state.getNumAgents():
+            depth -= 1
+            agentIndex = 0
+
+        if state.isWin():
+            return self.evaluationFunction(state)
+        elif state.isLose():
+            return self.evaluationFunction(state)
+
+        if depth == 0:
+            return self.evaluationFunction(state)
+
+        score = None
+        actions = state.getLegalActions(agentIndex)
+
+        for act in actions:
+            successor = state.generateSuccessor(agentIndex, act)
+            actScore = self.expectiMax(successor, depth, agentIndex + 1)
+            if score is None:
+                score = actScore
+                if agentIndex != 0:
+                    score /= float(len(actions))
+            elif agentIndex == 0:
+                score = max(score, actScore)
+            else:
+                score += float(actScore) / len(actions)
+        return score
 
 
 def betterEvaluationFunction(currentGameState):
@@ -324,10 +369,26 @@ def betterEvaluationFunction(currentGameState):
       Your extreme ghost-hunting, pellet-nabbing, food-gobbling, unstoppable
       evaluation function (question 5).
 
-      DESCRIPTION: <write something here so we know what you did>
+      DESCRIPTION: prioritizes staying cclose to food and states with less food
     """
+
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+
+    pos = currentGameState.getPacmanPosition()
+    food = currentGameState.getFood()
+
+    foodPos = getPositions(food)
+
+    score = currentGameState.getScore()
+
+    foodDistance = minManhattanDistance(pos, foodPos)
+
+
+    score -= foodDistance - currentGameState.getNumFood()
+
+
+    return score
+
 
 # Abbreviation
 better = betterEvaluationFunction
