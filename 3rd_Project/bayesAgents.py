@@ -251,7 +251,6 @@ def fillObsCPT(bayesNet, gameState):
             obsFactor.setProbability(assignment, prob)
         bayesNet.setCPT(obs, obsFactor)
 
-
 def getObsPos(obsVar):
     s = obsVar.replace('obs(','').replace(')','').split(',')
     return [int(si) for si in s]
@@ -263,6 +262,7 @@ def getAdjacentHouse(obsPos, possibleHouses):
     for house in possibleHouses:
         if manhattanDistance(house, obsPos) <= 2:
             return house
+
 
 def getMostLikelyFoodHousePosition(evidence, bayesNet, eliminationOrder):
     """

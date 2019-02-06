@@ -93,29 +93,62 @@ def joinFactors(factors):
     if len(factors) > 1:
         intersect = reduce(lambda x, y: x & y, setsOfUnconditioned)
         if len(intersect) > 0:
-            print("Factor failed joinFactors typecheck: ", factor)
+            print("Factor failed joinFactors typecheck: ", factors)
             raise ValueError("unconditionedVariables can only appear in one factor. \n"
                     + "unconditionedVariables: " + str(intersect) + 
                     "\nappear in more than one input factor.\n" + 
                     "Input factors: \n" +
                     "\n".join(map(str, factors)))
 
-
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    factors = factors.copy()
+
+    for f1 in factors:
+        factors.remove(f1)
+        print('f1\n', f1)
+        for f2 in factors:
+            jointFactor = join(f1, f2, getCommonVar(f1, f2))
+            factors.remove(f2)
+            if len(factors) == 0:
+                return jointFactor
+            factors.append(jointFactor)
+            break
+
+
+    return None
+
+def getCommonVar(f1, f2):
+    return list((f1.unconditionedVariables() | f1.conditionedVariables()) & (f2.unconditionedVariables() | f2.conditionedVariables()))
+
+def join(f1, f2, commonVars):
+    jointUncond = f1.unconditionedVariables() | f2.unconditionedVariables()
+    jointCond = (f1.conditionedVariables() | f2.conditionedVariables()) - jointUncond
+    jointFactor = Factor(list(jointUncond) , list(jointCond), dict(f2.variableDomainsDict(), **f1.variableDomainsDict()))
+    for a1 in f1.getAllPossibleAssignmentDicts():
+        for a2 in f2.getAllPossibleAssignmentDicts():
+            next = False
+            for v in commonVars:
+                if a1[v] != a2[v]:
+                    next = True
+                    break
+            if not next:
+                prob1 = f1.getProbability(a1)
+                prob2 = f2.getProbability(a2)
+                jointFactor.setProbability(dict(a2, **a1), prob1 * prob2)
+    return jointFactor
 
 
 def eliminateWithCallTracking(callTrackingList=None):
 
     def eliminate(factor, eliminationVariable):
         """
-        Question 4: Your eliminate implementation 
+        Question 4: Your eliminate implementation
 
         Input factor is a single factor.
         Input eliminationVariable is the variable to eliminate from factor.
         eliminationVariable must be an unconditioned variable in factor.
-        
-        You should calculate the set of unconditioned variables and conditioned 
+
+        You should calculate the set of unconditioned variables and conditioned
         variables for the factor obtained by eliminating the variable
         eliminationVariable.
 
@@ -139,10 +172,10 @@ def eliminateWithCallTracking(callTrackingList=None):
         if eliminationVariable not in factor.unconditionedVariables():
             print("Factor failed eliminate typecheck: ", factor)
             raise ValueError("Elimination variable is not an unconditioned variable " \
-                            + "in this factor\n" + 
+                            + "in this factor\n" +
                             "eliminationVariable: " + str(eliminationVariable) + \
                             "\nunconditionedVariables:" + str(factor.unconditionedVariables()))
-        
+
         if len(factor.unconditionedVariables()) == 1:
             print("Factor failed eliminate typecheck: ", factor)
             raise ValueError("Factor has only one unconditioned variable, so you " \
