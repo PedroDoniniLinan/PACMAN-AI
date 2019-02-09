@@ -48,8 +48,9 @@ def joinFactorsByVariableWithCallTracking(callTrackingList=None):
             raise ValueError("The joinBy variable can only appear in one factor as an \nunconditioned variable. \n" +  
                                "joinVariable: " + str(joinVariable) + "\n" +
                                ", ".join(map(str, [factor.unconditionedVariables() for factor in currentFactorsToJoin])))
-        
+
         joinedFactor = joinFactors(currentFactorsToJoin)
+
         return currentFactorsNotToJoin, joinedFactor
 
     return joinFactorsByVariable
@@ -102,20 +103,18 @@ def joinFactors(factors):
 
     "*** YOUR CODE HERE ***"
     factors = factors.copy()
+    while len(factors) > 1:
+        for f1 in factors:
+            factors.remove(f1)
+            for f2 in factors:
+                jointFactor = join(f1, f2, getCommonVar(f1, f2))
+                factors.remove(f2)
+                if len(factors) == 0:
+                    return jointFactor
+                factors.append(jointFactor)
+                break
+    return factors[0]
 
-    for f1 in factors:
-        factors.remove(f1)
-        print('f1\n', f1)
-        for f2 in factors:
-            jointFactor = join(f1, f2, getCommonVar(f1, f2))
-            factors.remove(f2)
-            if len(factors) == 0:
-                return jointFactor
-            factors.append(jointFactor)
-            break
-
-
-    return None
 
 def getCommonVar(f1, f2):
     return list((f1.unconditionedVariables() | f1.conditionedVariables()) & (f2.unconditionedVariables() | f2.conditionedVariables()))
@@ -184,7 +183,18 @@ def eliminateWithCallTracking(callTrackingList=None):
                     "unconditionedVariables: " + str(factor.unconditionedVariables()))
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+
+        uncondVar = [v for v in factor.unconditionedVariables() if v != eliminationVariable]
+        domain = factor.variableDomainsDict()
+        f = Factor(uncondVar, list(factor.conditionedVariables()), domain)
+
+        for a in factor.getAllPossibleAssignmentDicts():
+            probi = factor.getProbability(a)
+            del a[eliminationVariable]
+            prob = f.getProbability(a)
+            prob += probi
+            f.setProbability(a, prob)
+        return f
 
     return eliminate
 
@@ -239,5 +249,16 @@ def normalize(factor):
                             str(factor))
 
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
-
+    domain = factor.variableDomainsDict()
+    uncondVar = [v for v in factor.unconditionedVariables() if len(domain[v]) > 1]
+    singleVar = [v for v in factor.unconditionedVariables() if len(domain[v]) == 1]
+    condVar = singleVar + [v for v in factor.conditionedVariables()]
+    f = Factor(uncondVar, condVar, domain)
+    probSum = 0
+    for a in factor.getAllPossibleAssignmentDicts():
+        probSum += factor.getProbability(a)
+    ratio = 1 / probSum
+    for a in factor.getAllPossibleAssignmentDicts():
+        prob = factor.getProbability(a)
+        f.setProbability(a, prob * ratio)
+    return f

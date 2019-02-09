@@ -61,7 +61,7 @@ def inferenceByEnumeration(bayesNet, queryVariables, evidenceDict):
     fullJointOverQueryAndEvidence = incrementallyMarginalizedJoint
 
     # normalize so that the probability sums to one
-    # the input factor contains only the query variables and the evidence variables, 
+    # the input factor contains only the query variables and the evidence variables,
     # both as unconditioned variables
     queryConditionedOnEvidence = normalize(fullJointOverQueryAndEvidence)
     # now the factor is conditioned on the evidence variables
@@ -126,13 +126,27 @@ def inferenceByVariableEliminationWithCallTracking(callTrackingList=None):
         joinFactorsByVariable = joinFactorsByVariableWithCallTracking(callTrackingList)
         eliminate             = eliminateWithCallTracking(callTrackingList)
         if eliminationOrder is None: # set an arbitrary elimination order if None given
-            eliminationVariables = bayesNet.variablesSet() - set(queryVariables) -\
+            eliminationVariables = bayesNet.variablesSet() - set(queryVariables) - \
                                    set(evidenceDict.keys())
             eliminationOrder = sorted(list(eliminationVariables))
-
+        else:
+            eliminationVariables = eliminationOrder[0]
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
 
+        currentFactorsList = bayesNet.getAllCPTsWithEvidence(evidenceDict)
+        for joinVariable in eliminationOrder:
+            currentFactorsList, joinedFactor = joinFactorsByVariable(currentFactorsList, joinVariable)
+            if joinedFactor is not None:
+                if len(list(joinedFactor.unconditionedVariables())) == 1:
+                    pass
+                else:
+                    joinedFactor = eliminate(joinedFactor, joinVariable)
+                    currentFactorsList.append(joinedFactor)
+        fullJoint = joinFactors(currentFactorsList)
+
+        f = normalize(fullJoint)
+
+        return f
 
     return inferenceByVariableElimination
 
