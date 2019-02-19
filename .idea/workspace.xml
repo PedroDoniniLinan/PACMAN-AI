@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c33c408-8521-4cad-b834-9e7e58ca7c44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd_Project/bayesAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/3rd_Project/bayesAgents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd_Project/factorOperations.py" beforeDir="false" afterPath="$PROJECT_DIR$/3rd_Project/factorOperations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rd_Project/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/3rd_Project/inference.py" afterDir="false" />
-    </list>
+    <list default="true" id="0c33c408-8521-4cad-b834-9e7e58ca7c44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,64 +11,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3rd_Project/bayesAgents.py">
+        <entry file="file://$PROJECT_DIR$/4th_Project/valueIterationAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="470" column="45" selection-start-line="470" selection-start-column="45" selection-end-line="470" selection-end-column="45" />
+            <state relative-caret-position="-1171">
               <folding>
-                <element signature="e#660#681#0" expanded="true" />
-                <element signature="e#10388#11124#0" expanded="true" />
+                <element signature="e#1852#2521#0" expanded="true" />
+                <element signature="e#2564#2630#0" expanded="true" />
+                <element signature="e#2672#2785#0" expanded="true" />
+                <element signature="e#2850#3035#0" expanded="true" />
+                <element signature="e#3091#3474#0" expanded="true" />
+                <element signature="e#3516#3558#0" expanded="true" />
+                <element signature="e#3600#3702#0" expanded="true" />
+                <element signature="e#3752#3802#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3rd_Project/layout.py">
+        <entry file="file://$PROJECT_DIR$/4th_Project/qlearningAgents.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4th_Project/analysis.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4th_Project/mdp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="28" column="13" selection-start-line="28" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="293">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#10359#10518#0" expanded="true" />
+                <element signature="e#722#849#0" expanded="true" />
+                <element signature="e#888#963#0" expanded="true" />
+                <element signature="e#1014#1100#0" expanded="true" />
+                <element signature="e#1168#1534#0" expanded="true" />
+                <element signature="e#1595#1745#0" expanded="true" />
+                <element signature="e#1788#2173#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3rd_Project/factorOperations.py">
+        <entry file="file://$PROJECT_DIR$/4th_Project/learningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="17" />
+            <state relative-caret-position="256">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
-                <element signature="e#670#697#0" expanded="true" />
-                <element signature="e#2716#4812#0" expanded="true" />
-                <element signature="e#5646#8194#0" expanded="true" />
+                <element signature="e#775#3013#0" />
+                <element signature="e#3067#9538#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3rd_Project/inference.py">
+        <entry file="file://$PROJECT_DIR$/4th_Project/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="69" column="10" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="10" />
-              <folding>
-                <element signature="e#3412#7409#0" expanded="true" />
-                <element signature="e#3513#7268#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-25">
+              <caret line="320" selection-start-line="320" selection-end-line="320" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3rd_Project/bayesNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="283" column="20" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="20" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/4th_Project/gridworld.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4th_Project/featureExtractors.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -106,8 +117,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="933" />
-    <option name="width" value="995" />
+    <option name="x" value="932" />
+    <option name="width" value="997" />
     <option name="height" value="556" />
   </component>
   <component name="ProjectView">
@@ -115,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,13 +137,12 @@
             <path>
               <item name="PacmanIA" type="b2602c69:ProjectViewProjectNode" />
               <item name="PacmanIA" type="462c0819:PsiDirectoryNode" />
-              <item name="3rd_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="4th_Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,8 +217,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1340" height="760" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -218,7 +230,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49846625" visible="true" weight="0.95230526" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49846625" weight="0.95230526" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3290938" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50153375" side_tool="true" weight="0.95230526" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -349,6 +361,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/3rd_Project/bayesAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="470" column="45" selection-start-line="470" selection-start-column="45" selection-end-line="470" selection-end-column="45" />
+          <folding>
+            <element signature="e#660#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3rd_Project/layout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -359,43 +381,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3rd_Project/bayesNet.py">
+    <entry file="file://$PROJECT_DIR$/3rd_Project/factorOperations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="283" column="20" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="20" />
+        <state relative-caret-position="688">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="e#670#697#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3rd_Project/inference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="1040">
           <caret line="69" column="10" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3rd_Project/bayesNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="283" column="20" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/qlearningAgents.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/analysis.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/gridworld.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/featureExtractors.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/mdp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#3412#7409#0" expanded="true" />
-            <element signature="e#3513#7268#0" expanded="true" />
+            <element signature="e#722#849#0" expanded="true" />
+            <element signature="e#888#963#0" expanded="true" />
+            <element signature="e#1014#1100#0" expanded="true" />
+            <element signature="e#1168#1534#0" expanded="true" />
+            <element signature="e#1595#1745#0" expanded="true" />
+            <element signature="e#1788#2173#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3rd_Project/factorOperations.py">
+    <entry file="file://$PROJECT_DIR$/4th_Project/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="17" />
+        <state relative-caret-position="-25">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4th_Project/learningAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <element signature="e#670#697#0" expanded="true" />
-            <element signature="e#2716#4812#0" expanded="true" />
-            <element signature="e#5646#8194#0" expanded="true" />
+            <element signature="e#775#3013#0" />
+            <element signature="e#3067#9538#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3rd_Project/bayesAgents.py">
+    <entry file="file://$PROJECT_DIR$/4th_Project/valueIterationAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="470" column="45" selection-start-line="470" selection-start-column="45" selection-end-line="470" selection-end-column="45" />
+        <state relative-caret-position="-1171">
           <folding>
-            <element signature="e#660#681#0" expanded="true" />
-            <element signature="e#10388#11124#0" expanded="true" />
+            <element signature="e#1852#2521#0" expanded="true" />
+            <element signature="e#2564#2630#0" expanded="true" />
+            <element signature="e#2672#2785#0" expanded="true" />
+            <element signature="e#2850#3035#0" expanded="true" />
+            <element signature="e#3091#3474#0" expanded="true" />
+            <element signature="e#3516#3558#0" expanded="true" />
+            <element signature="e#3600#3702#0" expanded="true" />
+            <element signature="e#3752#3802#0" expanded="true" />
           </folding>
         </state>
       </provider>
