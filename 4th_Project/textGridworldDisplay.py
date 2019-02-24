@@ -288,7 +288,7 @@ def indent(rows, hasHeader=False, headerChar='-', delim=' | ', justify='left',
     # select the appropriate justify method
     justify = {'center':str.center, 'right':str.rjust, 'left':str.ljust}[justify.lower()]
     output=io.StringIO()
-    if separateRows: print(rowSeparator, file=output)
+    if separateRows: print(rowSeparator, output)
     for physicalRows in logicalRows:
         for row in physicalRows:
             print(prefix \

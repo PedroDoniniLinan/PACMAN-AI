@@ -30,6 +30,7 @@ import mdp, util
 
 from learningAgents import ValueEstimationAgent
 import collections
+from functools import reduce
 
 class ValueIterationAgent(ValueEstimationAgent):
     """
@@ -62,6 +63,18 @@ class ValueIterationAgent(ValueEstimationAgent):
     def runValueIteration(self):
         # Write value iteration code here
         "*** YOUR CODE HERE ***"
+        for i in  range(self.iterations):
+            v = util.Counter()
+            for s0 in self.mdp.getStates():
+                if self.mdp.isTerminal(s0):
+                    continue
+                v[s0] = -float("inf")
+                for a in self.mdp.getPossibleActions(s0):
+                    val = 0
+                    for s, p in self.mdp.getTransitionStatesAndProbs(s0, a):
+                        val += p * (self.mdp.getReward(s0, a, s) + self.discount * self.values[s])
+                    v[s0] = max(v[s0], val)
+            self.values = v.copy()
 
 
     def getValue(self, state):
@@ -77,7 +90,10 @@ class ValueIterationAgent(ValueEstimationAgent):
           value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        v = 0
+        for s, p in self.mdp.getTransitionStatesAndProbs(state, action):
+           v += p * (self.mdp.getReward(state, action, s) + self.discount * self.values[s])
+        return v
 
     def computeActionFromValues(self, state):
         """
@@ -89,7 +105,14 @@ class ValueIterationAgent(ValueEstimationAgent):
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        action = None
+        qVal = None
+        for a in self.mdp.getPossibleActions(state):
+            if action is None or self.getQValue(state, a) > qVal:
+                action = a
+                qVal = self.getQValue(state, a)
+        return action
+
 
     def getPolicy(self, state):
         return self.computeActionFromValues(state)
@@ -130,6 +153,19 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
 
     def runValueIteration(self):
         "*** YOUR CODE HERE ***"
+        states = self.mdp.getStates()
+        for i in range(self.iterations):
+            v = self.values.copy()
+            s0 = states[i % len(states)]
+            if self.mdp.isTerminal(s0):
+                continue
+            v[s0] = -float("inf")
+            for a in self.mdp.getPossibleActions(s0):
+                val = 0
+                for s, p in self.mdp.getTransitionStatesAndProbs(s0, a):
+                    val += p * (self.mdp.getReward(s0, a, s) + self.discount * self.values[s])
+                v[s0] = max(v[s0], val)
+            self.values = v.copy()
 
 class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
     """
@@ -150,4 +186,45 @@ class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
 
     def runValueIteration(self):
         "*** YOUR CODE HERE ***"
+        pred = self.generatePredecessors()
+        pQ = util.PriorityQueue()
+        states = self.mdp.getStates()
+        for s in states:
+            if self.mdp.isTerminal(s):
+                continue
+            pQ.push(s, -self.getDiff(s))
+        for i in range(self.iterations):
+            if pQ.isEmpty():
+                break
+            v = self.values.copy()
+            s0 = pQ.pop()
+            v[s0] = -float("inf")
+            for a in self.mdp.getPossibleActions(s0):
+                val = 0
+                for s, p in self.mdp.getTransitionStatesAndProbs(s0, a):
+                    val += p * (self.mdp.getReward(s0, a, s) + self.discount * self.values[s])
+                v[s0] = max(v[s0], val)
+            self.values = v.copy()
+            for p in pred[s0]:
+                diff = self.getDiff(p)
+                if diff > self.theta:
+                    pQ.update(p, -diff)
 
+
+    def getDiff(self, s):
+        qV = -float('inf')
+        for a in self.mdp.getPossibleActions(s):
+            qV = max(qV, self.getQValue(s, a))
+        return abs(qV - self.values[s])
+
+    def generatePredecessors(self):
+        pred = {}
+        for s in self.mdp.getStates():
+            for a in self.mdp.getPossibleActions(s):
+                for next, p in self.mdp.getTransitionStatesAndProbs(s, a):
+                    if p > 0:
+                        if next not in pred:
+                            pred[next] = {s}
+                        else:
+                            pred[next].add(s)
+        return pred
