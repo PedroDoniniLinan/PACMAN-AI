@@ -5,6 +5,13 @@ neighboring cells. The map contains two houses: a ghost house, which is probably
 blue. Pacman's goal is to enter the food house while avoiding the ghost house. Pacman will reason about which house is which based on his observations, and reason about the tradeoff between taking a chance or 
 gathering more evidence. To enable this, you'll implement probabilistic inference using Bayes nets.
 
+### **Command**
+
+Bayes agent:
+  * python hunters.py -p BayesAgent -r 
+
+### **Content**
+
 All algorithms to operate with the Bayes' Nets and the agent itself can be found in the "bayesAgents.py", "factorOperation.py", 
 "inference.py" files.
 
