@@ -1,6 +1,6 @@
-#*Subject*: Bayes' Nets
+# *Subject* : Bayes' Nets
 
-*Problem*:Pacman has entered a world of mystery. Initially, the entire map is invisible. As he explores it, he learns information about 
+**Problem** :Pacman has entered a world of mystery. Initially, the entire map is invisible. As he explores it, he learns information about 
 neighboring cells. The map contains two houses: a ghost house, which is probably mostly red, and a food house, which is probably mostly 
 blue. Pacman's goal is to enter the food house while avoiding the ghost house. Pacman will reason about which house is which based on his observations, and reason about the tradeoff between taking a chance or 
 gathering more evidence. To enable this, you'll implement probabilistic inference using Bayes nets.
