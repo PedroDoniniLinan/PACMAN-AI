@@ -1,0 +1,18 @@
+Multi-Agent Pacman
+
+Subject: Adversarial agents
+
+All agents algorithms can be found in the "multiAgents.py" file.
+
+1. Reflex Agent: A reflex agent chooses an action at each choice point by examining its alternatives via a state evaluation function. 
+It only considers immediate results.
+
+2. MinMax Agent: Implements the MinMax algorithm for a given state evaluation function and depth parameter.
+
+3. AlphaBeta Agent: Implements the AlphaBeta algorithm (improved MinMax which avoids running through unecessary nodes) for a given state 
+evaluation function and depth parameter.
+
+4. EspectiMax Agent: Implements the MinMax algorithm (MinMax which contains random nodes) for a given state evaluation function and 
+depth parameter.
+
+5. Better evaluation function: developed heuristic to improve the agents performance.
