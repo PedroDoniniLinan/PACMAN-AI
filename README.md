@@ -4,6 +4,6 @@ Several AI mini-projects with Pacman. Each one treats a different class of algor
 To run the algorithms:
 1. Open command-line terminal;
 2. Go to the desired mini-project directory;
-3. Type the desired test (inside project's command .txt file).
+3. Type the desired test command (described in each project's "_command.txt" file).
 
   
