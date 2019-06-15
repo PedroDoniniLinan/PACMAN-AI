@@ -1,5 +1,5 @@
 # PACMAN-AI
-Several AI mini-projects with Pacman.
+Several AI mini-projects with Pacman. Each one treats a different class of algorithms. The content of each project is explained in its respective "_content.txt".
 
 To run the algorithms:
 1. Open command-line terminal;
